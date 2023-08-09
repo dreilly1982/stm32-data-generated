@@ -46,6 +46,17 @@
                         "version": "g0",
                         "block": "ADC"
                     },
+                    "rcc": {
+                        "clock": "APB1",
+                        "enable": {
+                            "register": "APBENR2",
+                            "field": "ADCEN"
+                        },
+                        "reset": {
+                            "register": "APBRSTR2",
+                            "field": "ADCRST"
+                        }
+                    },
                     "pins": [
                         {
                             "pin": "PA0",
@@ -125,6 +136,17 @@
                         "kind": "adccommon",
                         "version": "v3",
                         "block": "ADC_COMMON"
+                    },
+                    "rcc": {
+                        "clock": "APB1",
+                        "enable": {
+                            "register": "APBENR2",
+                            "field": "ADCEN"
+                        },
+                        "reset": {
+                            "register": "APBRSTR2",
+                            "field": "ADCRST"
+                        }
                     }
                 },
                 {

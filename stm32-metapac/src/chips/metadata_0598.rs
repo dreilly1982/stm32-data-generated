@@ -8,7 +8,17 @@ const PERIPHERALS: &'static [Peripheral] = &[
             version: "v3",
             block: "ADC",
         }),
-        rcc: None,
+        rcc: Some(PeripheralRcc {
+            clock: "AHB2",
+            enable: Some(PeripheralRccRegister {
+                register: "AHB2ENR",
+                field: "ADCEN",
+            }),
+            reset: Some(PeripheralRccRegister {
+                register: "AHB2RSTR",
+                field: "ADCRST",
+            }),
+        }),
         pins: &[
             PeripheralPin {
                 pin: "PA0",
@@ -90,7 +100,17 @@ const PERIPHERALS: &'static [Peripheral] = &[
             version: "v3",
             block: "ADC",
         }),
-        rcc: None,
+        rcc: Some(PeripheralRcc {
+            clock: "AHB2",
+            enable: Some(PeripheralRccRegister {
+                register: "AHB2ENR",
+                field: "ADCEN",
+            }),
+            reset: Some(PeripheralRccRegister {
+                register: "AHB2RSTR",
+                field: "ADCRST",
+            }),
+        }),
         pins: &[
             PeripheralPin {
                 pin: "PA2",
@@ -162,7 +182,17 @@ const PERIPHERALS: &'static [Peripheral] = &[
             version: "v3",
             block: "ADC_COMMON",
         }),
-        rcc: None,
+        rcc: Some(PeripheralRcc {
+            clock: "AHB2",
+            enable: Some(PeripheralRccRegister {
+                register: "AHB2ENR",
+                field: "ADCEN",
+            }),
+            reset: Some(PeripheralRccRegister {
+                register: "AHB2RSTR",
+                field: "ADCRST",
+            }),
+        }),
         pins: &[],
         dma_channels: &[],
         interrupts: &[],

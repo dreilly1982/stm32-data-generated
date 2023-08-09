@@ -4,7 +4,17 @@ const PERIPHERALS: &'static [Peripheral] = &[
         name: "ADC1",
         address: 1073816576,
         registers: None,
-        rcc: None,
+        rcc: Some(PeripheralRcc {
+            clock: "AHB2",
+            enable: Some(PeripheralRccRegister {
+                register: "AHB2ENR",
+                field: "ADCEN",
+            }),
+            reset: Some(PeripheralRccRegister {
+                register: "AHB2RSTR",
+                field: "ADCRST",
+            }),
+        }),
         pins: &[
             PeripheralPin {
                 pin: "PA0",
@@ -73,7 +83,17 @@ const PERIPHERALS: &'static [Peripheral] = &[
         name: "ADC_COMMON",
         address: 1073817344,
         registers: None,
-        rcc: None,
+        rcc: Some(PeripheralRcc {
+            clock: "AHB2",
+            enable: Some(PeripheralRccRegister {
+                register: "AHB2ENR",
+                field: "ADCEN",
+            }),
+            reset: Some(PeripheralRccRegister {
+                register: "AHB2RSTR",
+                field: "ADCRST",
+            }),
+        }),
         pins: &[],
         dma_channels: &[],
         interrupts: &[],

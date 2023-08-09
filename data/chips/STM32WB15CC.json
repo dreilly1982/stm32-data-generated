@@ -550,6 +550,17 @@
                 {
                     "name": "ADC1",
                     "address": 1073816576,
+                    "rcc": {
+                        "clock": "AHB2",
+                        "enable": {
+                            "register": "AHB2ENR",
+                            "field": "ADCEN"
+                        },
+                        "reset": {
+                            "register": "AHB2RSTR",
+                            "field": "ADCRST"
+                        }
+                    },
                     "pins": [
                         {
                             "pin": "PA0",
@@ -608,7 +619,18 @@
                 },
                 {
                     "name": "ADC_COMMON",
-                    "address": 1073817344
+                    "address": 1073817344,
+                    "rcc": {
+                        "clock": "AHB2",
+                        "enable": {
+                            "register": "AHB2ENR",
+                            "field": "ADCEN"
+                        },
+                        "reset": {
+                            "register": "AHB2RSTR",
+                            "field": "ADCRST"
+                        }
+                    }
                 },
                 {
                     "name": "AES2",

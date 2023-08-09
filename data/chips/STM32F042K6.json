@@ -383,7 +383,18 @@
                 },
                 {
                     "name": "ADC_COMMON",
-                    "address": 1073817352
+                    "address": 1073817352,
+                    "rcc": {
+                        "clock": "APB2",
+                        "enable": {
+                            "register": "APB2ENR",
+                            "field": "ADCEN"
+                        },
+                        "reset": {
+                            "register": "APB2RSTR",
+                            "field": "ADCRST"
+                        }
+                    }
                 },
                 {
                     "name": "CAN",
