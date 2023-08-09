@@ -311,17 +311,6 @@
                         "kind": "adccommon",
                         "version": "v3",
                         "block": "ADC_COMMON"
-                    },
-                    "rcc": {
-                        "clock": "APB1",
-                        "enable": {
-                            "register": "APBENR2",
-                            "field": "ADCEN"
-                        },
-                        "reset": {
-                            "register": "APBRSTR2",
-                            "field": "ADCRST"
-                        }
                     }
                 },
                 {

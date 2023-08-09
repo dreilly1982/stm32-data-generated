@@ -294,17 +294,6 @@
                         "kind": "adccommon",
                         "version": "v3",
                         "block": "ADC_COMMON"
-                    },
-                    "rcc": {
-                        "clock": "APB2",
-                        "enable": {
-                            "register": "APB2ENR",
-                            "field": "ADCEN"
-                        },
-                        "reset": {
-                            "register": "APB2RSTR",
-                            "field": "ADCRST"
-                        }
                     }
                 },
                 {
@@ -2767,17 +2756,6 @@
                         "kind": "adccommon",
                         "version": "v3",
                         "block": "ADC_COMMON"
-                    },
-                    "rcc": {
-                        "clock": "APB2",
-                        "enable": {
-                            "register": "APB2ENR",
-                            "field": "ADCEN"
-                        },
-                        "reset": {
-                            "register": "APB2RSTR",
-                            "field": "ADCRST"
-                        }
                     }
                 },
                 {

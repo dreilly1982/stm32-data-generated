@@ -599,18 +599,7 @@
                 },
                 {
                     "name": "ADC_COMMON",
-                    "address": 1073817344,
-                    "rcc": {
-                        "clock": "AHB2",
-                        "enable": {
-                            "register": "AHB2ENR",
-                            "field": "ADCEN"
-                        },
-                        "reset": {
-                            "register": "AHB2RSTR",
-                            "field": "ADCRST"
-                        }
-                    }
+                    "address": 1073817344
                 },
                 {
                     "name": "AES2",

@@ -97,17 +97,7 @@ const PERIPHERALS: &'static [Peripheral] = &[
             version: "v3",
             block: "ADC_COMMON",
         }),
-        rcc: Some(PeripheralRcc {
-            clock: "APB2",
-            enable: Some(PeripheralRccRegister {
-                register: "APB2ENR",
-                field: "ADCEN",
-            }),
-            reset: Some(PeripheralRccRegister {
-                register: "APB2RSTR",
-                field: "ADCRST",
-            }),
-        }),
+        rcc: None,
         pins: &[],
         dma_channels: &[],
         interrupts: &[],
