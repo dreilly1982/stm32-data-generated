@@ -37,17 +37,6 @@
                 {
                     "name": "ADC1",
                     "address": 1073816576,
-                    "rcc": {
-                        "clock": "APB1",
-                        "enable": {
-                            "register": "APBENR2",
-                            "field": "ADCEN"
-                        },
-                        "reset": {
-                            "register": "APBRSTR2",
-                            "field": "ADCRST"
-                        }
-                    },
                     "pins": [
                         {
                             "pin": "PA0",
